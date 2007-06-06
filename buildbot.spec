@@ -14,8 +14,6 @@ BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:  python-devel
 Requires:       python-twisted >= 2.0.0
 
-BuildArch:	noarch
-
 %description
 The BuildBot is a system to automate the compile/test cycle required by
 most software projects to validate code changes. By automatically
@@ -51,4 +49,4 @@ rm -rf %{buildroot}
 %{_bindir}/buildbot
 %{py_platsitedir}/buildbot
 %{_datadir}/%{name}
-#%{py_platsitedir}/buildbot-0.7.5-py2.5.egg-info
+%{py_platsitedir}/buildbot-0.7.5-py2.5.egg-info
