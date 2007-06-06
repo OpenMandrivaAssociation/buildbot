@@ -33,7 +33,7 @@ inconvenienced by the failure.
 %install
 rm -rf %{buildroot}
 
-%{__python} setup.py install -O1 --skip-build --root %{buildroot}
+%{__python} setup.py install -O1 --skip-build --root %{buildroot} --install-purelib=%py_platsitedir
 
 mkdir -p %{buildroot}/%{_datadir}/%{name}/
 cp -R contrib %{buildroot}/%{_datadir}/%{name}/
