@@ -8,7 +8,6 @@ License:        GPL
 URL:            http://buildbot.net
 Source0:        http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 BuildRequires:  python-devel
 Requires:       python-twisted >= 2.0.0
