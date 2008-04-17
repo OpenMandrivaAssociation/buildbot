@@ -1,10 +1,10 @@
 Name:           buildbot
-Version:        0.7.6
+Version:        0.7.7
 Release:        %mkrel 1
 Summary:        Build/test automation system
 
 Group:          Development/Python
-License:        GPL
+License:        GPLv2+
 URL:            http://buildbot.net
 Source0:        http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 
