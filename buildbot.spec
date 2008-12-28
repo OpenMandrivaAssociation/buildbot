@@ -1,12 +1,12 @@
 Name:           buildbot
-Version:        0.7.8
+Version:        0.7.9
 Release:        %mkrel 1
 Summary:        Build/test automation system
 
 Group:          Development/Python
 License:        GPLv2+
 URL:            http://buildbot.net
-Source0:        http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
+Source0:        http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
@@ -43,8 +43,8 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root,-)
-%doc ChangeLog NEWS README docs
+%doc NEWS README docs
 %{_bindir}/buildbot
 %{py_platsitedir}/buildbot
 %{_datadir}/%{name}
-%{py_platsitedir}/%{name}-%{version}-py2.5.egg-info
+%{py_platsitedir}/*.egg-info
