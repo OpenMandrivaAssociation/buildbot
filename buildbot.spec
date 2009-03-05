@@ -1,5 +1,5 @@
 Name:           buildbot
-Version:        0.7.9
+Version:        0.7.10p1
 Release:        %mkrel 1
 Summary:        Build/test automation system
 
