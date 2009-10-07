@@ -1,6 +1,6 @@
 Name:           buildbot
-Version:        0.7.10p1
-Release:        %mkrel 2
+Version:        0.7.11p3
+Release:        %mkrel 1
 Summary:        Build/test automation system
 
 Group:          Development/Python
