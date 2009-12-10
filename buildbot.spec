@@ -1,12 +1,13 @@
 Name:           buildbot
 Version:        0.7.11p3
-Release:        %mkrel 1
+Release:        %mkrel 2
 Summary:        Build/test automation system
 
 Group:          Development/Python
 License:        GPLv2+
 URL:            http://buildbot.net
 Source0:        http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+Patch0:         buildbot-contrib-shebang.patch
 
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
@@ -22,6 +23,7 @@ inconvenienced by the failure.
 
 %prep
 %setup -q
+%patch0 -p0
 
 %build
 %{__python} setup.py build
@@ -48,3 +50,4 @@ rm -rf %{buildroot}
 %{py_platsitedir}/buildbot
 %{_datadir}/%{name}
 %{py_platsitedir}/*.egg-info
+%attr(755,root,root) %{py_platsitedir}/buildbot/test/subdir/emit.py
