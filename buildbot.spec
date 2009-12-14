@@ -1,6 +1,6 @@
 Name:           buildbot
 Version:        0.7.11p3
-Release:        %mkrel 2
+Release:        %mkrel 3
 Summary:        Build/test automation system
 
 Group:          Development/Python
@@ -42,9 +42,6 @@ chmod -x %{buildroot}/%{_datadir}/%{name}/contrib/windows/*
 
 # Fix permissions on emit.py
 chmod 0755 %{buildroot}/%{py_platsitedir}/buildbot/test/subdir/emit.py
-
-# workaround to fix build with rpm-mandriva-setup 1.96
-touch debugfiles.list
 
 %clean
 rm -rf %{buildroot}
