@@ -1,16 +1,13 @@
 Name:           buildbot
-Version:        0.7.11p3
-Release:        %mkrel 3
+Version:        0.7.12
+Release:        %mkrel 1
 Summary:        Build/test automation system
-
 Group:          Development/Python
 License:        GPLv2+
 URL:            http://buildbot.net
 Source0:        http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 Patch0:         buildbot-contrib-shebang.patch
-
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-
 BuildRequires:  python-devel
 Requires:       python-twisted >= 2.0.0
 
