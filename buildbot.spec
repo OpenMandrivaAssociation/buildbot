@@ -2,7 +2,7 @@
 
 Name:           buildbot
 Version:        0.8.5
-Release:        %mkrel 0
+Release:        %mkrel 1
 Summary:        Build/test automation system
 Group:          Development/Python
 License:        GPLv2+
@@ -110,6 +110,8 @@ chmod 0755 %{buildroot}/%{_datadir}/%{name}/contrib/fix_changes_pickle_encoding.
 
 %clean
 rm -rf %{buildroot}
+
+%files
 
 %files master
 %defattr(-,root,root,-)
