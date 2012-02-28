@@ -2,7 +2,7 @@
 
 Name:           buildbot
 Version:        0.8.5
-Release:        %mkrel 1
+Release:        %mkrel 2
 Summary:        Build/test automation system
 Group:          Development/Python
 License:        GPLv2+
@@ -10,6 +10,7 @@ URL:            http://buildbot.net
 Source0:        http://buildbot.googlecode.com/files/%{name}-%{version}.tar.gz
 Source1:        http://buildbot.googlecode.com/files/%{name}-slave-%{slaveversion}.tar.gz  
 Patch0:         buildbot-contrib-shebang.patch
+Patch1:         buildbot-alchemy-migrate-req.patch
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:  python-devel
 BuildRequires:  python-sphinx
@@ -20,7 +21,8 @@ BuildArch:  noarch
 
 # Turns former package into a metapackage for installing everything
 Requires:       %{name}-master = %{version}
-Requires:       %{name}-doc = %{version}
+#docs disabled
+#%%Requires:       %{name}-doc = %{version}
 Requires:       %{name}-slave = %{slaveversion}
 
 %description
@@ -64,6 +66,7 @@ The buildbot-master package contains the buildmaster.
 %setup -q -b 1 -n %{name}-slave-%{slaveversion}
 %setup -q
 %patch0 -p0
+%patch1 -p0
 
 # include only generated images in binary rpm
 #mkdir images && mv docs/images/*.png images/
