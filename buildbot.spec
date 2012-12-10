@@ -132,3 +132,101 @@ rm -rf %{buildroot}
 %{python_sitelib}/buildslave
 %{python_sitelib}/buildbot_slave*.egg-info
 
+
+
+%changelog
+* Tue Feb 28 2012 Guilherme Moro <guilherme@mandriva.com> 0.8.5-2mdv2012.0
++ Revision: 781292
+- Fixed reqs for buildbot-master
+
+* Thu Feb 16 2012 Guilherme Moro <guilherme@mandriva.com> 0.8.5-1
++ Revision: 775248
++ rebuild (emptylog)
+
+* Mon Feb 06 2012 Guilherme Moro <guilherme@mandriva.com> 0.8.5-0
++ Revision: 771323
+- updated to version 0.8.5
+
+* Sat Nov 06 2010 Jani Välimaa <wally@mandriva.org> 0.8.0-3mdv2011.0
++ Revision: 594296
+- rebuild for python 2.7
+
+  + Michael Scherer <misc@mandriva.org>
+    - rebuild for python 2.7
+
+  + Tadej Panjtar <tadej@mandriva.org>
+    - update to 0.8.0
+
+* Wed May 05 2010 Funda Wang <fwang@mandriva.org> 0.7.12-2mdv2010.1
++ Revision: 542308
+- BR python-setuptools
+
+* Sat Mar 06 2010 Sandro Cazzaniga <kharec@mandriva.org> 0.7.12-1mdv2010.1
++ Revision: 515258
+- update to 0.7.12
+
+* Mon Dec 14 2009 Stéphane Téletchéa <steletch@mandriva.org> 0.7.11p3-3mdv2010.1
++ Revision: 478465
+- rpm-mandriva-setup fixed
+
+* Mon Dec 14 2009 Stéphane Téletchéa <steletch@mandriva.org> 0.7.11p3-2mdv2010.1
++ Revision: 478462
+- Provide a more clear explanation for the debugfiles list bug in rpm-mandriva-setup
+
+* Fri Dec 11 2009 Stéphane Téletchéa <steletch@mandriva.org> 0.7.11p3-1mdv2010.1
++ Revision: 476461
+- fix permissions for emit.py
+- Fix error on debug search in the bs
+
+  + Tadej Panjtar <tadej@mandriva.org>
+    - minor corrections according to packaging standards
+    - Update to new version
+
+* Thu Sep 10 2009 Thierry Vignaud <tv@mandriva.org> 0.7.10p1-2mdv2010.0
++ Revision: 436903
+- rebuild
+
+* Thu Mar 05 2009 Jérôme Soyer <saispo@mandriva.org> 0.7.10p1-1mdv2009.1
++ Revision: 348914
+- New upstream release
+
+* Sun Dec 28 2008 Funda Wang <fwang@mandriva.org> 0.7.9-1mdv2009.1
++ Revision: 320366
+- New version 0.7.9
+
+* Mon Aug 11 2008 Jérôme Soyer <saispo@mandriva.org> 0.7.8-1mdv2009.0
++ Revision: 270612
+- New release 0.7.8
+
+* Thu Aug 07 2008 Thierry Vignaud <tv@mandriva.org> 0.7.7-2mdv2009.0
++ Revision: 266429
+- rebuild early 2009.0 package (before pixel changes)
+
+* Thu Apr 17 2008 Funda Wang <fwang@mandriva.org> 0.7.7-1mdv2009.0
++ Revision: 195060
+- New version 0.7.7
+
+  + Olivier Blin <blino@mandriva.org>
+    - restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+* Tue Oct 09 2007 Jérôme Soyer <saispo@mandriva.org> 0.7.6-1mdv2008.1
++ Revision: 95946
+- New release 0.7.6
+- New release 0.7.6
+
+* Thu Sep 27 2007 Anne Nicolas <ennael@mandriva.org> 0.7.5-3mdv2008.0
++ Revision: 93423
+- bump release to reupload
+
+* Wed Jun 06 2007 Jérôme Soyer <saispo@mandriva.org> 0.7.5-2mdv2008.0
++ Revision: 36098
+- Fix %%mkrel number
+- Bump release for rebuild
+- Remove noarch
+- Fix 64bits Build
+- Fix RPM Group
+- Import buildbot
+
