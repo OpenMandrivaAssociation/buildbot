@@ -6,7 +6,7 @@ Release:        3
 Summary:        Build/test automation system
 Group:          Development/Python
 License:        GPLv2+
-URL:            http://buildbot.net
+URL:            https://buildbot.net
 Source0:        http://buildbot.googlecode.com/files/%{name}-%{version}.tar.gz
 Source1:        http://buildbot.googlecode.com/files/%{name}-slave-%{slaveversion}.tar.gz  
 Patch0:         buildbot-contrib-shebang.patch
